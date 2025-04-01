@@ -1,0 +1,160 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+}
+
+#body-login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#body-login .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#panel-izquierdo {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.badge {
+    font-weight: bold;
+    font-size: 16px;
+    background: #febf00;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0 140px;
+}
+
+.title {
+    font-size: 45px;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.version {
+    font-size: 12px;
+    color: #febf00;
+}
+
+#panel-derecho {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+    background: white;
+}
+
+.icon-user {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.login-title {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.login-subtitle {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #d9d9d9;
+    width: 60%;
+}
+
+.label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-field {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background: #febf00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #e6b800;
+}
+
+.forgot-password,
+.register {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.forgot-password:hover,
+.register:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left-panel {
+        padding: 30px;
+    }
+    .right-panel {
+        padding: 20px;
+    }
+}
+
