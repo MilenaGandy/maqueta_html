@@ -188,6 +188,7 @@ ul.breadcrumb {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 1px 20px;
+    margin-bottom: 40px;
 }
 
 .column-1{
