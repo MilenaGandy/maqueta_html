@@ -6,7 +6,7 @@
     <title>Crear Ticket - ITOps</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style-inicio.css">
+    <link rel="stylesheet" href="style-dashboard.css">
 </head>
 <body id="body-inicio">
     <header class="header">
@@ -16,7 +16,7 @@
     <section>
         <nav class="sidebar">
             <ul>
-                <li><a href="#" style="font-weight: bold; text-decoration-line: underline;">Menú Principal</a></li>
+                <li><a href="dashboard.html" style="font-weight: bold; text-decoration-line: underline;">Menú Principal</a></li>
                 <li><a class="active" href="#"><i class="fa.solid fa-user-circle-o" aria-hidden="true"></i>Tickets</a></li>
                 <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Clientes</a></li>
                 <li><a href="#">Mi  Gestión</a></li>
@@ -25,66 +25,76 @@
         </nav>
         <main>
             <ul class="breadcrumb">
-                <li><a href="#">Dashboard General</a></li>
+                <li><a href="dashboard.html">Dashboard General</a></li>
                 <li><a href="#">Crear Ticket</a></li>
               </ul>
             <div class="container-formulario">
                 <h2>Crear Nuevo Ticket</h2>
                 <form action="#" method="post">
-                    <div class="container-input">
-                        <div>
+                    <div class="row">
+                        <div class="column-1">
                             <label for="nombre">Nombre del Solicitante*</label>
                             <input type="text" id="nombre" name="nombre" required>
                         </div>
-                        <div>
+                        <div class="column-1">
                             <label for="cliente">Cliente*</label>
                             <input type="cliente" id="cliente" name="cliente" required>
                         </div>
-                        <div>
+                        <div class="column-1">
                             <label for="email">Correo Electrónico*</label>
                             <input type="cliente" id="cliente" name="email" required>
                         </div>
-                        <div>
+                        <div class="column-1">
                             <label for="email">Telefono*</label>
                             <input type="email" id="email" name="email" required>
                         </div>
-                    </div>  
-                        <div>
+                    </div>
+                    <div class="row">    
+                        <div class="column-2">
                             <label for="categoria">Categoría*</label>
                             <select id="categoria" name="categoria" required>
                                 <option value="soporte">Soporte Técnico</option>
                                 <option value="facturacion">Facturación</option>
                                 <option value="otro">Otro</option>
                             </select>
-
+                        </div>
+                        <div class="column-2">
                             <label for="estado">Estado*</label>
                             <select id="estado" name="estado" required>
                                 <option value="soporte"> En proceso</option>
                                 <option value="facturacion">Resuelto</option>
                                 <option value="otro">Pendiente</option>
                             </select>
-
+                        </div>
+                        <div class="column-2">
                             <label for="agente">Agente Asignado*</label>
                             <select id="agente" name="agente" required>
                                 <option value="agente1"> Juan Pérez</option>
                                 <option value="agente2">María Gómez</option>
                                 <option value="agente3">Carlos Ruiz</option>
-                            </select>
-                        
+                            </select>                        
+                        </div>
                     </div>
-        
-                    <label for="problema">Descripción del Problema*</label>
-                    <textarea id="problema" name="problema" rows="4" required></textarea>
-
-                    <label for="gestion">Descripción de la Gestión Realizada*</label>
-                    <textarea id="gestion" name="gestion" rows="4" required></textarea>
-        
-                    <button type="submit">Crear Ticket</button>
-                    <button type="submit">Cancelar</button>
+                    <div class="row">    
+                        <div class="column-3">        
+                            <label for="problema">Descripción del Problema*</label>
+                            <textarea id="problema" name="problema" rows="4" required></textarea>
+                        </div>
+                        <div class="column-3">
+                            <label for="gestion">Descripción de la Gestión Realizada*</label>
+                            <textarea id="gestion" name="gestion" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">    
+                        <div class="column-4">
+                            <button type="submit">Crear Ticket</button>
+                        </div>
+                        <div class="column-4">
+                            <button type="submit">Cancelar</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            
-            
         </main>
     </section>
     <footer id="footer">

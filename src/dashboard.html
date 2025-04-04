@@ -6,20 +6,20 @@
     <title>Dashboard - ITOps</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style-inicio.css">
+    <link rel="stylesheet" href="style-dashboard.css">
 </head>
 <body id="body-inicio">
     <header class="header">
-        <a class="menu-toggle">☰</a>
+        <a class="menu-icon">☰</a>
         <h1 class="header-title">HELPDESK</h1>
     </header>
     <section>
         <nav class="sidebar">
             <ul>
-                <li><a class="active" href="#" style="font-weight: bold; text-decoration-line: underline;">Menú Principal</a></li>
+                <li><a class="active" href="dashboard.html" style="font-weight: bold; text-decoration-line: underline;">Menú Principal</a></li>
                 <li><a href="crearTicket.html"><i class="fa.solid fa-user-circle-o" aria-hidden="true"></i>Tickets</a></li>
                 <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Clientes</a></li>
-                <li><a href="#">Mi  Gestión</a></li>
+                <li><a href="#">Mi Gestión</a></li>
                 <li><a href="#">Configuración</a></li>
             </ul>
         </nav>
@@ -27,16 +27,16 @@
             <ul class="breadcrumb">
                 <li><a href="#">Dashboard General</a></li>
               </ul>
-            <!---<div class="button-container">
-                <a class="card">CLIENTES</a>
-                <a class="card">MI GESTIÓN</a>
-                <a class="card">CONFIGURACIÓN</a>
-            </div>-->
-            <h2>Tickets</h2>
-            <div class="table-container">    
-                <div class="search-container">
-                    <input type="text" class="search" placeholder="Buscar ticket">
-                    <button class="btn-secondary">Buscar</button>
+            <div class="table-container">                
+            <h2>Lista de Tickets</h2> 
+                <div class="row">
+                    <div class="column-1">
+                        <label for="search">Buscar Ticket</label>
+                        <input type="text">
+                    </div>
+                    <div class="column-1">
+                        <button>Buscar</button>
+                    </div>
                 </div>
                 <div>           
                     <table>
