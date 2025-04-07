@@ -1,5 +1,5 @@
 
-// VALIDACIONES DEL LOGIN ******************************************
+// VALIDACIONES DEL LOGIN *********************************************************
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".login-form");
     const emailInput = document.getElementById("email");
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//Implementar búsqueda de tickets en la tabla ****************************************
+//Implementar búsqueda de tickets en la tabla *****************************************
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.querySelector(".column-1 input");
     const tableRows = document.querySelectorAll("tbody tr");
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Validar el formulario de creación tickets ****************************************
+// Validar el formulario de creación tickets *****************************************
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const emailInput = document.getElementById("email");
