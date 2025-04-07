@@ -1,65 +1,48 @@
-Instrucciones para ingresar a la Maqueta de Interfaz gráfica 
+# Proyecto: Helpdesk - Maquetación HTML
 
- 
+Este proyecto representa la interfaz de un sistema **Helpdesk** utilizando tecnologías web básicas como HTML, CSS y JavaScript. A continuación, se describe la estructura del proyecto y la funcionalidad de cada archivo:
 
-Ingresar a la página https://milenagandy.github.io/maqueta_html/ para ver en línea desde un GitHub Pages o en la carpeta adjunta con nombre “MaquetaHTML”, debe descargar los archivos en local y en el archivo index.html, dar clic derecho y seleccionar la opción de abrir en el navegador. 
+---
 
-En el index.html se encuentra el login de la aplicación como lo muestra la imagen. Debe ingresar con las siguientes credenciales: 
+## 📁 Estructura del Proyecto
 
-Usuario: admin@helpdesk.com 
+### 📂 Carpeta `img/`
+Contiene las imágenes utilizadas en las vistas del proyecto para mejorar el diseño visual.
 
-Contraseña:  admin123 
+### 📄 Archivos HTML
+- **`index.html`**: Página principal del sistema, posiblemente utilizada para bienvenida o inicio de sesión.
+- **`dashboard.html`**: Panel principal del sistema, donde se presentan opciones de navegación y resumen de actividad.
+- **`crearTicket.html`**: Formulario para crear tickets, con campos para solicitante, cliente, correo, teléfono, categoría, estado, agente y descripciones.
 
- 
+### 🎨 Archivos CSS
+- **`style-index.css`**: Estilos específicos para la página de inicio (`index.html`).
+- **`style-dashboard.css`**: Estilos para las vistas internas como el dashboard y el formulario de tickets, incluyendo estructura de layout y formularios.
 
-Funcionalidades en Javascript habilitadas en la página de Login: 
+### 📜 Archivo JavaScript
+- **`script.js`**: Contiene la lógica interactiva del sitio, incluyendo:
+  - Validación de campos del formulario.
+  - Resaltado de tarjetas de ticket al pasar el mouse.
+  - Alertas visuales.
+  - Otras mejoras de experiencia de usuario.
 
-Credenciales Ficticias 
+---
 
-Validaciones de email y password 
+## ✨ Tecnologías Utilizadas
+- HTML5 para la estructura del contenido.
+- CSS3 para el diseño y la distribución visual.
+- JavaScript para funcionalidades interactivas y validaciones.
 
-Mensajes de alertas 
+---
 
- 
+## 🔧 Objetivo del Proyecto
+Este proyecto tiene como finalidad simular un entorno de gestión de tickets en un sistema Helpdesk, aplicando principios de maquetación web, diseño de interfaces y programación con JavaScript para mejorar la experiencia del usuario.
 
-Al ingresar se redirigirá a la página principal dashboard.html  
- 
+---
 
-Nota. Tomado del desarrollo del sistema helpdesk. 
+## 📆 Autor
+- Yessica Mendoza
 
-Funcionalidades en Javascript habilitadas en la página de Dashboard: 
+---
 
-Búsqueda de Tickets en la tabla 
+Para ejecutar el proyecto, simplemente abre `index.html` en un navegador web moderno. Asegúrate de que todos los archivos estén en el mismo directorio para mantener las rutas relativas funcionando correctamente.
 
-Resaltar la fila de un ticket al pasar el mouse 
-
-
-Otras funcionalidades: 
-
-El breadcrumb muestra la ruta y la página donde se encuentra y está habilitado para dar clic y llevar a la página correspondiente 
-
-En el menú principal está habilitado la opción “Tickets” que lo redirigirá a la página de “Creación de ticket” 
-
-En el menú principal está habilitado la opción “Cerrrar Sesión” que redirige a la página Login. 
-
-
-Al ingresar a la página de “Creación de ticket” encontrará un formulario para la creación de ticket nuevo. 
-
-Funcionalidades en Javascript habilitadas en la página de Crear Ticket: 
-
-Validar formato de correo electrónico 
-
-Validar que el teléfono solo contenga números 
-
-Verificar campos vacíos y resaltarlos 
-
-Confirmación antes de enviar 
-
-
-Otras funcionalidades: 
-
-El breadcrumb muestra la ruta y la página donde se encuentra y está habilitado para dar clic y llevar a la página correspondiente 
-
-En el menú principal está habilitado la opción “Cerrrar Sesión” que redirige a la página Login. 
-
- 
